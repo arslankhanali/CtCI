@@ -39,12 +39,16 @@ public class Question {
 	}
 	
 	public static void main(String[] args) {
-		String s = "aabbccc";
+		long startTime= System.currentTimeMillis();
+		String s = "abababaaa";
 		ArrayList<String> result = printPerms(s);
 		System.out.println("Count: " + result.size());
 		for (String r : result) {
 			System.out.println(r);
 		}
+		long endTime= System.currentTimeMillis();
+		long runTime= endTime-startTime;
+		System.out.println("Time it took = "+runTime);
 	}
 
 }

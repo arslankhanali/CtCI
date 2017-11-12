@@ -24,7 +24,7 @@ public class QuestionB {
 	}
 	
 	public static void main(String[] args) {
-		int n = 50;
+		int n = 60;
 		int ways = countWays(n);
 		System.out.println(ways);
 	}
