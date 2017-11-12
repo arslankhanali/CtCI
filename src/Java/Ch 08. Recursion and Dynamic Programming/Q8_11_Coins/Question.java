@@ -18,7 +18,7 @@ public class Question {
 	
 	public static void main(String[] args) {
 		int[] denoms = {25, 10, 5, 1};
-		int ways = makeChange(300322, denoms);
+		int ways = makeChange(3003, denoms);
 		System.out.println(ways);
 	}
 

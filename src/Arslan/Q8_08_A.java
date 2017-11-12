@@ -29,7 +29,9 @@ public class Q8_08_A {
         for (int i = 0; i < chars.length; ++i) {
             String newPrefix = prefix + chars[i];
             char[] chars1= newChar(chars,i);
+            System.out.println("1="+newPrefix);
             getPermsRecur(newPrefix, chars1,k - 1);
+            System.out.println("2="+newPrefix);
         }
     }
 
@@ -81,7 +83,7 @@ public class Q8_08_A {
 
     public static void main(String[] args) {
         long startTime= System.currentTimeMillis();
-        String s = "abababaaa";
+        String s = "aabb";
         HashSet<String> result = getPerms(s);
         System.out.println("Count: " + result.size());
         for (String r : result) {
