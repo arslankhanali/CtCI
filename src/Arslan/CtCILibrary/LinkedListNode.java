@@ -1,6 +1,4 @@
-package CtCILibrary;
-
-import CtCILibrary.LinkedListNode;
+package Arslan.CtCILibrary;
 
 public class LinkedListNode {
 	public LinkedListNode next;
