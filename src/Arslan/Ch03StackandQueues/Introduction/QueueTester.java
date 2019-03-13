@@ -10,7 +10,8 @@ public class QueueTester {
 
 	public static void main(String[] args) {
 		int[] array = AssortedMethods.randomArray(100, -100, 100);
-		MyQueue<Integer> queue1 = new MyQueue<Integer>();		
+		//MyQueue<Integer> queue1 = new MyQueue<Integer>();
+		Solution_Queue<Integer> queue1 = new Solution_Queue<Integer>();
 		Queue<Integer> queue2 = new LinkedList<Integer>();
 		
 		for (int a : array) {

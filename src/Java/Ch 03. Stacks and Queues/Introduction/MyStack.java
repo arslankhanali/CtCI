@@ -3,6 +3,7 @@ package Introduction;
 import java.util.EmptyStackException;
 
 public class MyStack<T> {
+
 	private static class StackNode<T> {
 		private T data;
 		private StackNode<T> next;

@@ -3,13 +3,15 @@ package Introduction;
 import java.util.EmptyStackException;
 import java.util.Stack;
 
+import Arslan.Ch03StackandQueues.Introduction.Solution_Stack;
 import CtCILibrary.AssortedMethods;
 
 public class StackTester {
 
 	public static void main(String[] args) {
 		int[] array = AssortedMethods.randomArray(100, -100, 100);
-		MyStack<Integer> stack1 = new MyStack<Integer>();		
+		//MyStack<Integer> stack1 = new MyStack<Integer>();
+		Solution_Stack<Integer> stack1 = new Solution_Stack<Integer>();
 		Stack<Integer> stack2 = new Stack<Integer>();
 		
 		for (int a : array) {
