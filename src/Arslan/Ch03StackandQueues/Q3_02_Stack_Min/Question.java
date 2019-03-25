@@ -3,7 +3,8 @@ package Arslan.Ch03StackandQueues.Q3_02_Stack_Min;
 public class Question {
 	public static void main(String[] args) {
 		StackWithMin stack = new StackWithMin();
-		StackWithMin2 stack2 = new StackWithMin2();
+		//StackWithMin2 stack2 = new StackWithMin2();
+		Solution stack2 = new Solution();
 		int[] array = {2, 1, 3, 1};
 		for (int value : array) {
 			stack.push(value);
