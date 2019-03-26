@@ -7,7 +7,8 @@ import java.util.Queue;
 
 public class Question {
 	public static void main(String[] args) {
-		MyQueue<Integer> my_queue = new MyQueue<Integer>();	
+		MyQueue<Integer> my_queue = new MyQueue<Integer>();
+		//Solution<Integer> my_queue=new Solution<>();
 		
 		// Let's test our code against a "real" queue
 		Queue<Integer> test_queue = new LinkedList<Integer>();

@@ -22,6 +22,10 @@ public class Question {
 			}
 		}
 
+		System.out.println(left);
+		System.out.println(right);
+		System.out.println("------------");
+
 		left = mergesort(left);
 		right = mergesort(right);
 
@@ -42,6 +46,8 @@ public class Question {
 			reverseStack.push(inStack.pop());
 		}
 
+
+		System.out.println(reverseStack);
 		return reverseStack;
 	}
 	
@@ -66,10 +72,10 @@ public class Question {
 		Stack<Integer> s = new Stack<Integer>();
 		for (int i = 0; i < 10; i++) {
 			int r = AssortedMethods.randomIntInRange(0,  1000);
-			s.push(r);
+			s.push(i);
 		}
 		
-		sort(s);
+		mergesort(s);
 		
 		while(!s.isEmpty()) {
 			System.out.println(s.pop());
