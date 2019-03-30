@@ -1,6 +1,7 @@
 package Q2_02_Return_Kth_To_Last;
 
-import CtCILibrary.*;
+import Arslan.CtCILibrary.AssortedMethods;
+import Arslan.CtCILibrary.LinkedListNode;
 
 public class QuestionA {
 

@@ -2,7 +2,7 @@ package Q3_05_Sort_Stack;
 
 import java.util.Stack;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Question {
 	public static Stack<Integer> mergesort(Stack<Integer> inStack) {

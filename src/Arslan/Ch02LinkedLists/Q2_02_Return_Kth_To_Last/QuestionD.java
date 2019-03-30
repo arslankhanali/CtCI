@@ -1,7 +1,7 @@
 package Arslan.Ch02LinkedLists.Q2_02_Return_Kth_To_Last;
 
-import CtCILibrary.LinkedListNode;
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.LinkedListNode;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionD {
 	

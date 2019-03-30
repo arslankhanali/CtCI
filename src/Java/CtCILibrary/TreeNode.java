@@ -1,4 +1,4 @@
-package CtCILibrary;
+package Java.CtCILibrary;
 
 /* One node of a binary tree. The data element stored is a single 
  * character.
@@ -88,6 +88,8 @@ public class TreeNode {
 			return null;
 		}
 		int mid = (start + end) / 2;
+		//System.out.println(mid);
+
 		TreeNode n = new TreeNode(arr[mid]);
 		n.setLeftChild(createMinimalBST(arr, start, mid - 1));
 		n.setRightChild(createMinimalBST(arr, mid + 1, end));

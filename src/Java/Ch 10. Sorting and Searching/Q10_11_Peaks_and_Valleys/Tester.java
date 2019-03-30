@@ -1,6 +1,6 @@
 package Q10_11_Peaks_and_Valleys;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Tester {
 	public static boolean confirmValleyPeak(int[] array) {

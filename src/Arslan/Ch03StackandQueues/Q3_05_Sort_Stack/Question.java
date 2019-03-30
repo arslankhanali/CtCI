@@ -1,6 +1,6 @@
 package Arslan.Ch03StackandQueues.Q3_05_Sort_Stack;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 import java.util.Stack;
 

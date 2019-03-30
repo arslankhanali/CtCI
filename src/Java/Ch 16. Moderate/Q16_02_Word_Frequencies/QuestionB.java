@@ -2,7 +2,7 @@ package Q16_02_Word_Frequencies;
 
 import java.util.*;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionB {
 	public static HashMap<String, Integer> setupDictionary(String[] book) {

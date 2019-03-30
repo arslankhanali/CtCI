@@ -1,8 +1,8 @@
 package Q17_25_Word_Rectangle;
 
 import java.util.ArrayList;
-import CtCILibrary.AssortedMethods;
-import CtCILibrary.Trie;
+import Java.CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.Trie;
 
 public class Question {
 	private int maxWordLength;

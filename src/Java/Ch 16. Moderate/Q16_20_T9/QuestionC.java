@@ -3,8 +3,8 @@ package Q16_20_T9;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-import CtCILibrary.AssortedMethods;
-import CtCILibrary.HashMapList;
+import Java.CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.HashMapList;
 
 public class QuestionC {
 	public static int numLetters = 26;

@@ -1,6 +1,6 @@
 package Arslan.Ch04TreesandGraphs.Q4_09_BST_Sequences;
 
-import CtCILibrary.TreeNode;
+import Java.CtCILibrary.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

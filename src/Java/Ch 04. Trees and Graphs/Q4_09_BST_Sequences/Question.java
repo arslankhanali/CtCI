@@ -3,7 +3,7 @@ package Q4_09_BST_Sequences;
 import java.util.ArrayList;
 import java.util.LinkedList;
 
-import CtCILibrary.TreeNode;
+import Java.CtCILibrary.TreeNode;
 
 public class Question {
 	

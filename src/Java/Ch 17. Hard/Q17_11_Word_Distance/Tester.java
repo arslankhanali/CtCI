@@ -1,10 +1,7 @@
 package Q17_11_Word_Distance;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-
-import CtCILibrary.AssortedMethods;
-import CtCILibrary.HashMapList;
+import Java.CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.HashMapList;
 
 public class Tester {
 	

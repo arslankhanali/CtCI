@@ -1,6 +1,6 @@
 package Q10_10_Rank_from_Stream;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Question {
 	private static RankNode root = null;

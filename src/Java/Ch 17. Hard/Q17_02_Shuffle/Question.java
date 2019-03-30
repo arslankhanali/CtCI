@@ -1,6 +1,6 @@
 package Q17_02_Shuffle;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Question {
 

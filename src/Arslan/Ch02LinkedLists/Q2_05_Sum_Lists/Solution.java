@@ -1,7 +1,5 @@
 package Arslan.Ch02LinkedLists.Q2_05_Sum_Lists;
-import CtCILibrary.LinkedListNode;
-
-import java.lang.reflect.Array;
+import Java.CtCILibrary.LinkedListNode;
 
 public class Solution {
 

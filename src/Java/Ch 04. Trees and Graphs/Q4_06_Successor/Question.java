@@ -1,6 +1,6 @@
 package Q4_06_Successor;
 
-import CtCILibrary.TreeNode;
+import Java.CtCILibrary.TreeNode;
 
 public class Question {
 

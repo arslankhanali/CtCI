@@ -1,6 +1,6 @@
 package Arslan.Ch02LinkedLists.Q2_06_Palindrome;
 
-import CtCILibrary.LinkedListNode;
+import Java.CtCILibrary.LinkedListNode;
 
 public class Tester {
 	

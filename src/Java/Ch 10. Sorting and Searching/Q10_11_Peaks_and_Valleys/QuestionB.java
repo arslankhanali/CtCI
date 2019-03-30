@@ -1,6 +1,6 @@
 package Q10_11_Peaks_and_Valleys;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionB {
 	public static void swap(int[] array, int left, int right) {

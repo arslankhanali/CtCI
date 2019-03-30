@@ -1,6 +1,6 @@
 package Q17_11_Word_Distance;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionA {
 

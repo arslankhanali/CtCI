@@ -1,6 +1,6 @@
 package Arslan.Ch03StackandQueues.Q3_01_Three_in_One;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionA {
 	public static void printStacks(FixedMultiStack stacks) {

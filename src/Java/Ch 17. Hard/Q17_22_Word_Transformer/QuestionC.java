@@ -1,10 +1,9 @@
 package Q17_22_Word_Transformer;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.LinkedList;
 
-import CtCILibrary.HashMapList;
+import Java.CtCILibrary.HashMapList;
 
 public class QuestionC {
 	

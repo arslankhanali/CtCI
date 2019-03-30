@@ -1,6 +1,6 @@
 package Q16_21_Sum_Swap;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Tester {
 	

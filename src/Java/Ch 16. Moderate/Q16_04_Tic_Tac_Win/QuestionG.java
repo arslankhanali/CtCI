@@ -2,7 +2,7 @@ package Q16_04_Tic_Tac_Win;
 
 import java.util.ArrayList;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionG {
 	public static class Check {

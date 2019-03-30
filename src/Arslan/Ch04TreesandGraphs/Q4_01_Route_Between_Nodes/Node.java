@@ -5,6 +5,7 @@ class Node {
     public int adjacentCount;
     private String vertex;
     public Question.State state;
+
     public Node(String vertex, int adjacentLength) {
         this.vertex = vertex;                
         adjacentCount = 0;        
@@ -24,5 +25,14 @@ class Node {
     }
     public String getVertex() {
         return vertex;
+    }
+
+    @Override
+    public String toString() {
+        String S="";
+        for (Node node : adjacent) {
+            S=S+" "+node.toString();
+        }
+        return vertex+" "+ S;
     }
 }

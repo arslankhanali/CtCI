@@ -1,6 +1,6 @@
 package Arslan.CtCILibrary;
 
-/* One node of a binary tree. The data element stored is a single 
+/* One node of a binary tree. The data element stored is a single
  * character.
  */
 public class TreeNode {
@@ -95,6 +95,7 @@ public class TreeNode {
 	}
 	
 	public static TreeNode createMinimalBST(int array[]) {
+
 		return createMinimalBST(array, 0, array.length - 1);
 	}
 	

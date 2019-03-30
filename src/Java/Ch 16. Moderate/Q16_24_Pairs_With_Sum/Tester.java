@@ -2,7 +2,7 @@ package Q16_24_Pairs_With_Sum;
 
 import java.util.ArrayList;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Tester {
 	

@@ -2,7 +2,7 @@ package Q8_03_Magic_Index;
 
 import java.util.Arrays;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionB {
 

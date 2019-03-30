@@ -1,6 +1,6 @@
 package Sample_Code;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Sample_Code {
 

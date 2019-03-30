@@ -4,7 +4,7 @@ import java.util.EmptyStackException;
 import java.util.Stack;
 
 import Arslan.Ch03StackandQueues.Introduction.Solution_Stack;
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class StackTester {
 

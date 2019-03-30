@@ -1,6 +1,6 @@
 package Q10_01_Sorted_Merge;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Question {
 

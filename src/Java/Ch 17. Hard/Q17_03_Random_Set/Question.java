@@ -1,6 +1,6 @@
 package Q17_03_Random_Set;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Question {
 

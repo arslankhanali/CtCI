@@ -1,6 +1,6 @@
 package Arslan.Ch04TreesandGraphs.Q4_03_List_of_Depths;
 
-import CtCILibrary.*;
+import Arslan.CtCILibrary.*;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -18,9 +18,11 @@ public class QuestionBFS {
 		}
 		
 		while (current.size() > 0) {
+
 			result.add(current); // Add previous level
 			LinkedList<TreeNode> parents = current; // Go to next level
-			current = new LinkedList<TreeNode>(); 
+			current = new LinkedList<TreeNode>();
+
 			for (TreeNode parent : parents) {
 				/* Visit the children */
 				if (parent.left != null) {
@@ -29,6 +31,8 @@ public class QuestionBFS {
 				if (parent.right != null) {
 					current.add(parent.right);
 				}
+
+
 			}
 		}
 
@@ -52,6 +56,7 @@ public class QuestionBFS {
 	public static void main(String[] args) {
 		int[] nodes_flattened = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		TreeNode root = AssortedMethods.createTreeFromArray(nodes_flattened);
+		root.print();
 		ArrayList<LinkedList<TreeNode>> list = createLevelLinkedList(root);
 		printResult(list);
 	}

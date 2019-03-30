@@ -1,6 +1,6 @@
 package Q17_25_Word_Rectangle;
 
-import CtCILibrary.Trie;
+import Java.CtCILibrary.Trie;
 
 /* A class that represents a rectangular array of letters. */
 public class Rectangle {

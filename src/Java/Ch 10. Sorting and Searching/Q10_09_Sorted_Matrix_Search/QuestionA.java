@@ -1,5 +1,5 @@
 package Q10_09_Sorted_Matrix_Search;
-import CtCILibrary.*;
+import Java.CtCILibrary.*;
 
 public class QuestionA {
 

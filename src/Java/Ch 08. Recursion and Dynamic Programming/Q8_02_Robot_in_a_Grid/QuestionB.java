@@ -1,10 +1,9 @@
 package Q8_02_Robot_in_a_Grid;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionB {
 	public static ArrayList<Point> getPath(boolean[][] maze) {

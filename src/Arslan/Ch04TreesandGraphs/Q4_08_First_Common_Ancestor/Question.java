@@ -1,6 +1,6 @@
 package Arslan.Ch04TreesandGraphs.Q4_08_First_Common_Ancestor;
 
-import CtCILibrary.TreeNode;
+import Java.CtCILibrary.TreeNode;
 
 public class Question {
 	static int TWO_NODES_FOUND = 2;

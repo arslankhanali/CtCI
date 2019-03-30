@@ -1,6 +1,6 @@
 package Introduction;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Quicksort {
 	public static void swap(int[] array, int i, int j) {

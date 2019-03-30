@@ -2,7 +2,7 @@ package Q8_02_Robot_in_a_Grid;
 
 import java.util.ArrayList;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionA {
 	

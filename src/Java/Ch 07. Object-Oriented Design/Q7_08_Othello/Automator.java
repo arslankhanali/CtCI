@@ -2,7 +2,7 @@ package Q7_08_Othello;
 
 import java.util.ArrayList;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 /* A helper class to automate this game. This is just used for testing purposes. */
 public class Automator {

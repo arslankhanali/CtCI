@@ -1,6 +1,6 @@
 package Q5_01_Insertion;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Question {
 

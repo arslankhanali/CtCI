@@ -1,6 +1,6 @@
 package Arslan.Ch01ArraysandStrings.Q1_07_Rotate_Matrix;
 
-import CtCILibrary.*;
+import Arslan.CtCILibrary.*;
 
 public class Question {
 

@@ -2,7 +2,7 @@ package Q17_17_Multi_Search;
 
 import java.util.ArrayList;
 
-import CtCILibrary.HashMapList;
+import Java.CtCILibrary.HashMapList;
 
 public class QuestionC {
 	public static Trie createTreeFromStrings(String[] smalls, int maxSize) {

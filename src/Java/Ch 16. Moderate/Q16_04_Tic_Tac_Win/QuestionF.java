@@ -1,6 +1,6 @@
 package Q16_04_Tic_Tac_Win;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionF {
 

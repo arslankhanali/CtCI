@@ -1,5 +1,7 @@
 package Arslan.CtCILibrary;
 
+import Arslan.Ch04TreesandGraphs.Q4_02_Minimal_Tree.Sol_tree;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;

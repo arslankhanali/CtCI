@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.Map.Entry;
 import java.util.Set;
 
-import CtCILibrary.AssortedMethods;
-import CtCILibrary.HashMapList;
+import Java.CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.HashMapList;
 
 public class QuestionB {
 	public static HashMap<DocPair, Double> computeSimilarities(HashMap<Integer, Document> documents) {

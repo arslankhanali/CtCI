@@ -1,11 +1,11 @@
 package Arslan.Ch04TreesandGraphs.Introduction;
 
-import CtCILibrary.TreeNode;
+import Java.CtCILibrary.TreeNode;
 
 public class Traversals {
 	public static void visit(TreeNode node) {
 		if (node != null) {
-			System.out.println(node.data);
+			System.out.print(node.data+" ");
 		}
 	}
 	
@@ -38,7 +38,13 @@ public class Traversals {
 		
 		// We needed this code for other files, so check out the code in the library
 		TreeNode root = TreeNode.createMinimalBST(array);
+
 		inOrderTraversal(root);
+		System.out.println();
+		postOrderTraversal(root);
+		System.out.println();
+		preOrderTraversal(root);
+
 	}
 
 }

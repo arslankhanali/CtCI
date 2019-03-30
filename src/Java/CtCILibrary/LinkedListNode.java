@@ -1,6 +1,4 @@
-package CtCILibrary;
-
-import CtCILibrary.LinkedListNode;
+package Java.CtCILibrary;
 
 public class LinkedListNode {
 	public LinkedListNode next;

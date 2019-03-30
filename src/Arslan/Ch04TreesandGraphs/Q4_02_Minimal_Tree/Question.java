@@ -1,16 +1,34 @@
 package Arslan.Ch04TreesandGraphs.Q4_02_Minimal_Tree;
 
-import CtCILibrary.TreeNode;
+import Java.CtCILibrary.TreeNode;
+
+import java.util.ArrayList;
 
 public class Question {	
 	public static void main(String[] args) {
 		int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+
+
 		
 		// We needed this code for other files, so check out the code in the library
 		TreeNode root = TreeNode.createMinimalBST(array);
 		System.out.println("Root? " + root.data);
 		System.out.println("Created BST? " + root.isBST());
 		System.out.println("Height: " + root.height());
+		root.print();
+
+
+
+		int[] array1 = {2,8,1,3,6,9,4,7,10};
+		TreeNode root1= new TreeNode(5);
+		for (int i : array1) {
+			root1.insertInOrder(i);
+		}
+		root1.print();
+
+
+
+
 	}
 
 }

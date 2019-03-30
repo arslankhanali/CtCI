@@ -1,6 +1,6 @@
 package Arslan.Ch03StackandQueues.Introduction;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 import java.util.LinkedList;
 import java.util.NoSuchElementException;

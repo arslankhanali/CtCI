@@ -1,6 +1,6 @@
 package Q1_07_Rotate_Matrix;
 
-import CtCILibrary.*;
+import Java.CtCILibrary.*;
 
 public class Question {
 

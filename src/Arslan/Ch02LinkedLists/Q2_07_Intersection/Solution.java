@@ -1,7 +1,7 @@
 package Arslan.Ch02LinkedLists.Q2_07_Intersection;
 
-import CtCILibrary.AssortedMethods;
-import CtCILibrary.LinkedListNode;
+import Java.CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.LinkedListNode;
 
 
 public class Solution {

@@ -1,6 +1,6 @@
 package SwapMinMax;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class SwapMinMax {
 	

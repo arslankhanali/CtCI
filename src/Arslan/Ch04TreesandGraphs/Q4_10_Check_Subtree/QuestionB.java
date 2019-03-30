@@ -1,7 +1,7 @@
 package Arslan.Ch04TreesandGraphs.Q4_10_Check_Subtree;
 
-import CtCILibrary.AssortedMethods;
-import CtCILibrary.TreeNode;
+import Java.CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.TreeNode;
 
 public class QuestionB {
 

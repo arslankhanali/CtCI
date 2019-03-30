@@ -1,6 +1,6 @@
 package Q7_04_Parking_Lot;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Question {
 

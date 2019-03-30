@@ -1,8 +1,9 @@
 package Arslan;
 
+import Java.CtCILibrary.AssortedMethods;
+
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Stack;
 
 public class mergesort {
 
@@ -61,7 +62,7 @@ public class mergesort {
     public static void main(String[] args) {
         ArrayList<Integer> s = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
-            int r = CtCILibrary.AssortedMethods.randomIntInRange(0, 100);
+            int r = AssortedMethods.randomIntInRange(0, 100);
             s.add(r);
         }
         System.out.println(s);

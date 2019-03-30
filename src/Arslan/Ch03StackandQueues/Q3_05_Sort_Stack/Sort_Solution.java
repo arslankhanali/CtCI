@@ -1,7 +1,7 @@
 package Arslan.Ch03StackandQueues.Q3_05_Sort_Stack;
 
-import java.lang.reflect.Array;
-import java.util.Collections;
+import Java.CtCILibrary.AssortedMethods;
+
 import java.util.Stack;
 
 public class Sort_Solution {
@@ -31,7 +31,7 @@ public class Sort_Solution {
     public static void main(String [] args) {
         Stack<Integer> s = new Stack<Integer>();
         for (int i = 0; i < 10; i++) {
-            int r = CtCILibrary.AssortedMethods.randomIntInRange(0,  1000);
+            int r = AssortedMethods.randomIntInRange(0,  1000);
             s.push(r);
         }
 

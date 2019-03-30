@@ -2,7 +2,7 @@ package Q7_01_Deck_of_Cards;
 
 import java.util.ArrayList;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Deck <T extends Card> {
 	private ArrayList<T> cards;

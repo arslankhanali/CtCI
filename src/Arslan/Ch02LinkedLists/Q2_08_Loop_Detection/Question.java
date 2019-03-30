@@ -1,6 +1,6 @@
 package Arslan.Ch02LinkedLists.Q2_08_Loop_Detection;
 
-import CtCILibrary.LinkedListNode;
+import Java.CtCILibrary.LinkedListNode;
 
 public class Question {
 

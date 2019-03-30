@@ -3,7 +3,7 @@ package IntroductionLocks;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class MyClass extends Thread  {
 	private NoLockATM noLockATM;

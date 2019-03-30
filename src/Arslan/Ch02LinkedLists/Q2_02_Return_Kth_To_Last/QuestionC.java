@@ -1,6 +1,6 @@
 package Arslan.Ch02LinkedLists.Q2_02_Return_Kth_To_Last;
 
-import CtCILibrary.*;
+import Arslan.CtCILibrary.*;
 
 public class QuestionC {
 	public static class Index {

@@ -1,6 +1,6 @@
 package Arslan.Ch04TreesandGraphs.Q4_03_List_of_Depths;
 
-import CtCILibrary.*;
+import Arslan.CtCILibrary.*;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -17,7 +17,7 @@ public class QuestionDFS {
 			 * we must have seen levels 0 through i - 1. We can therefore safely add the level at the end. */
 			lists.add(list);  
 		} else {
-			list = lists.get(level);
+			list=lists.get(level);
 		}
 		list.add(root);
 		createLevelLinkedList(root.left, lists, level + 1);

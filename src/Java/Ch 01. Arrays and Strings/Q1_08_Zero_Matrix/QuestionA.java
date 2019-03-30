@@ -1,6 +1,6 @@
 package Q1_08_Zero_Matrix;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionA {
 	public static void nullifyRow(int[][] matrix, int row) {

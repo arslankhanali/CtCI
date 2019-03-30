@@ -1,7 +1,7 @@
 package Q16_04_Tic_Tac_Win;
 
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionB {	
 	public static Piece hasWon(Piece[][] board, int row, int column) {

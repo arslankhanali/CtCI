@@ -1,6 +1,6 @@
 package Arslan.Ch03StackandQueues.Q3_04_Queue_via_Stacks;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 import java.util.LinkedList;
 import java.util.Queue;

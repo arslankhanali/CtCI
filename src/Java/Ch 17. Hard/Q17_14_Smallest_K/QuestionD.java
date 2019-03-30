@@ -2,7 +2,7 @@ package Q17_14_Smallest_K;
 
 import java.util.Random;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class QuestionD {
 	public static class PartitionResult {

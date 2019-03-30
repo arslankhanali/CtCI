@@ -1,6 +1,6 @@
 package Q10_08_Find_Duplicates;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Question {
 

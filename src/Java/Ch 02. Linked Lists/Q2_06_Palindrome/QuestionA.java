@@ -1,6 +1,6 @@
 package Q2_06_Palindrome;
 
-import CtCILibrary.LinkedListNode;
+import Java.CtCILibrary.LinkedListNode;
 
 public class QuestionA {
 	public static boolean isPalindrome(LinkedListNode head) {

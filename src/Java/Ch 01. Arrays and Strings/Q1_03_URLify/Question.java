@@ -1,6 +1,6 @@
 package Q1_03_URLify;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Question {
 	// Assume string has sufficient free space at the end

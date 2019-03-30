@@ -3,7 +3,7 @@ package Q3_04_Queue_via_Stacks;
 import java.util.LinkedList;
 import java.util.Queue;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Question {
 	public static void main(String[] args) {

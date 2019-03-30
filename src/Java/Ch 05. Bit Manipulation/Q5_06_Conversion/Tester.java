@@ -1,6 +1,6 @@
 package Q5_06_Conversion;
 
-import CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.AssortedMethods;
 
 public class Tester {
 	public static int bitSwapRequired(int a, int b) {

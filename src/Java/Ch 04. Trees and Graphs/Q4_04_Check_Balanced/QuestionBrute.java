@@ -1,7 +1,7 @@
 package Q4_04_Check_Balanced;
 
-import CtCILibrary.AssortedMethods;
-import CtCILibrary.TreeNode;
+import Java.CtCILibrary.AssortedMethods;
+import Java.CtCILibrary.TreeNode;
 
 public class QuestionBrute {
 	

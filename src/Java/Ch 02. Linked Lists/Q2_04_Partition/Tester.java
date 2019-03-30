@@ -1,6 +1,6 @@
 package Q2_04_Partition;
 
-import CtCILibrary.LinkedListNode;
+import Java.CtCILibrary.LinkedListNode;
 
 public class Tester {
 	
