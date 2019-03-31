@@ -21,7 +21,7 @@ public class QuestionBrute {
 			return false;
 		}
 		else {
-			return isBalanced(root.left) && isBalanced(root.right);
+			return isBalanced(root.left) && isBalanced(root.right); //&& TRICK
 		}
 	}
 	

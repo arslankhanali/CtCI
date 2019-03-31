@@ -91,21 +91,23 @@ public class QuestionB {
 		System.out.println(isBst);
 		
 		/* More elaborate test -- creates 100 trees (some BST, some not) and compares the outputs of various methods. */
-		/*for (int i = 0; i < 100; i++) {
-			TreeNode head = createTestTree();
-			
-			// Compare results 
-			boolean isBst1 = checkBST(head);
-			boolean isBst2 = checkBSTAlternate(head);
-			
-			if (isBst1 != isBst2) {
-				System.out.println("*********************** ERROR *******************");
-				head.print();
-				break;
-			} else {
-				System.out.println(isBst1 + " | " + isBst2);
-				head.print();
-			}
-		}*/
+
+//		for (int i = 0; i < 100; i++) {
+//			TreeNode head = createTestTree();
+//
+//			// Compare results
+//			boolean isBst1 = checkBST(head);
+//			boolean isBst2 = checkBSTAlternate(head);
+//
+//			if (isBst1 != isBst2) {
+//				System.out.println("*********************** ERROR *******************");
+//				head.print();
+//				break;
+//			} else {
+//				System.out.println(isBst1 + " | " + isBst2);
+//				head.print();
+//			}
+//		}
+
 	}
 }
