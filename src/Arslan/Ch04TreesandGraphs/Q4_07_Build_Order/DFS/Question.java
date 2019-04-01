@@ -88,13 +88,14 @@ public class Question {
 				{"h", "i"},
 				{"h", "j"},
 				{"i", "j"},
-				{"g", "j"}};
+				{"g", "j"}};//higjabdefc
+							//aghbicdjef
 		String[] buildOrder = buildOrderWrapper(projects, dependencies);
 		if (buildOrder == null) {
 			System.out.println("Circular Dependency.");
 		} else {
 			for (String s : buildOrder) {
-				System.out.println(s);
+				System.out.print(s);
 			}
 		}
 	}

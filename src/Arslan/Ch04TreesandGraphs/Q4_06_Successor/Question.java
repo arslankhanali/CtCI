@@ -13,7 +13,7 @@ public class Question {
 		} else { 
 			TreeNode q = n;
 			TreeNode x = q.parent;
-			// Go up until we�re on left instead of right
+			// Go up until we�re on left instead of right, of our parent
 			while (x != null && x.left != q) {
 				q = x;
 				x = x.parent;
@@ -35,6 +35,7 @@ public class Question {
 	public static void main(String[] args) {
 		int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 		TreeNode root = TreeNode.createMinimalBST(array);
+		root.print();
 		for (int i = 0; i < array.length; i++) {
 			TreeNode node = root.find(array[i]);
 			TreeNode next = inorderSucc(node);

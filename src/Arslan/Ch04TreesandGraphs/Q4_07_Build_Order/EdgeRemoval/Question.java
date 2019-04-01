@@ -102,12 +102,14 @@ public class Question {
 				{"h", "j"},
 				{"i", "j"},
 				{"g", "j"}};
+							//aghbicdjef
+							//higjabdefc
 		String[] buildOrder = buildOrderWrapper(projects, dependencies);
 		if (buildOrder == null) {
 			System.out.println("Circular Dependency.");
 		} else {
 			for (String s : buildOrder) {
-				System.out.println(s);
+				System.out.print(s);
 			}
 		}
 	}
