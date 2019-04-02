@@ -3,26 +3,35 @@ package Arslan.Ch04TreesandGraphs.Q4_10_Check_Subtree;
 import Java.CtCILibrary.AssortedMethods;
 import Java.CtCILibrary.TreeNode;
 
-public class QuestionA {
+public class Solution_A {
+
+
 
     public static boolean containsTree(TreeNode t1, TreeNode t2) {
-        StringBuilder string1 = new StringBuilder();
-        StringBuilder string2 = new StringBuilder();
+       StringBuilder sb1=new StringBuilder();
+       StringBuilder sb2=new StringBuilder();
 
-        getOrderString(t1, string1);
-        getOrderString(t2, string2);
+       getOrderString(t1,sb1);
+       getOrderString(t2,sb2);
 
-        return string1.indexOf(string2.toString()) != -1;
+       //System.out.println(sb1.indexOf(sb2.toString()));
+       return  sb1.indexOf(sb2.toString())!=-1;
+
     }
 
     public static void getOrderString(TreeNode node, StringBuilder sb) {
-        if (node == null) {
-            sb.append("X");             // Add null indicator
+
+        if(node==null){
+            sb.append("X");
             return;
         }
-        sb.append(node.data);           // Add root
-        getOrderString(node.left, sb);  // Add left
-        getOrderString(node.right, sb); // Add right
+
+
+        getOrderString(node.left,sb);
+
+        getOrderString(node.right,sb);
+        sb.append(node.data);
+
     }
 
     public static void main(String[] args) {
@@ -52,5 +61,6 @@ public class QuestionA {
             System.out.println("t4 is not a subtree of t3");
         }
     }
+
 
 }

@@ -8,6 +8,8 @@ public class QuestionB {
 		TreeNode first = delta > 0 ? q : p; // get shallower node
 		TreeNode second = delta > 0 ? p : q; // get deeper node
 		second = goUpBy(second, Math.abs(delta)); // move shallower node to depth of deeper
+
+
 		while (first != second && first != null && second != null) {
 			first = first.parent;
 			second = second.parent;

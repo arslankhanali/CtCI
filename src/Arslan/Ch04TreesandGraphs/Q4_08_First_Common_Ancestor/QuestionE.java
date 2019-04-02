@@ -56,6 +56,7 @@ public class QuestionE {
 		TreeNode root = TreeNode.createMinimalBST(array);
 		TreeNode n3 = root.find(10);
 		TreeNode n7 = root.find(6);
+		root.print();
 		TreeNode ancestor = commonAncestor(root, n3, n7);
 		if (ancestor != null) {
 			System.out.println(ancestor.data);

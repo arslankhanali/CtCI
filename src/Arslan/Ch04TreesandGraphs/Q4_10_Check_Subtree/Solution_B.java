@@ -3,26 +3,35 @@ package Arslan.Ch04TreesandGraphs.Q4_10_Check_Subtree;
 import Java.CtCILibrary.AssortedMethods;
 import Java.CtCILibrary.TreeNode;
 
-public class QuestionA {
+public class Solution_B {
+
 
     public static boolean containsTree(TreeNode t1, TreeNode t2) {
-        StringBuilder string1 = new StringBuilder();
-        StringBuilder string2 = new StringBuilder();
-
-        getOrderString(t1, string1);
-        getOrderString(t2, string2);
-
-        return string1.indexOf(string2.toString()) != -1;
+        if (t2 == null) {
+            return true;
+        }
+        return subTree(t1, t2);
     }
 
-    public static void getOrderString(TreeNode node, StringBuilder sb) {
-        if (node == null) {
-            sb.append("X");             // Add null indicator
-            return;
+    public static boolean subTree(TreeNode r1, TreeNode r2) {
+        if (r1 == null) {
+            return false;
         }
-        sb.append(node.data);           // Add root
-        getOrderString(node.left, sb);  // Add left
-        getOrderString(node.right, sb); // Add right
+
+        if(r1.data==r2.data)return matchTree(r1,r2);
+
+        return subTree(r1.left, r2) || subTree(r1.right, r2);
+
+    }
+
+    public static boolean matchTree(TreeNode r1, TreeNode r2) {
+
+        if (r1 == null && r2 == null) return true;
+        else if (r1 == null || r2 == null) return false;
+        else if (r1.data != r2.data) return false;
+
+
+        return matchTree(r1.left, r2.left) && matchTree(r1.right, r2.right);
     }
 
     public static void main(String[] args) {
@@ -32,8 +41,7 @@ public class QuestionA {
 
         TreeNode t1 = AssortedMethods.createTreeFromArray(array1);
         TreeNode t2 = AssortedMethods.createTreeFromArray(array2);
-        t1.print();
-        t2.print();
+
         if (containsTree(t1, t2)) {
             System.out.println("t2 is a subtree of t1");
         } else {
@@ -44,8 +52,7 @@ public class QuestionA {
         int[] array3 = {1, 2, 3};
         TreeNode t3 = AssortedMethods.createTreeFromArray(array1);
         TreeNode t4 = AssortedMethods.createTreeFromArray(array3);
-        t3.print();
-        t4.print();
+
         if (containsTree(t3, t4)) {
             System.out.println("t4 is a subtree of t3");
         } else {

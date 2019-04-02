@@ -10,6 +10,7 @@ public class Question {
 			for (int x : array) {
 				tree.insertInOrder(x);
 			}
+
 			int d = tree.getRandomNode().data;
 			counts[d]++;
 		}
