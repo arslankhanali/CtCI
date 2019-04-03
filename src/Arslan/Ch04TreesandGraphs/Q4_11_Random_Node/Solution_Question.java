@@ -11,11 +11,12 @@ public class Solution_Question {
                 tree.insertInOrder(x);
             }
 
-            System.out.println(tree.size);
-            tree.printtraverse();
-            break;
-            //int d = tree.getRandomNode().data;
-            //counts[d]++;
+            //System.out.println(tree.size());
+//            tree.printtraverse();
+            //break;
+
+            int d = tree.getRandomNode().data;
+            counts[d]++;
         }
 
         for (int i = 0; i < counts.length; i++) {

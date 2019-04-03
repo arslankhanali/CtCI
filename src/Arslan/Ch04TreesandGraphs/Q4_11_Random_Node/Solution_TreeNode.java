@@ -2,6 +2,8 @@ package Arslan.Ch04TreesandGraphs.Q4_11_Random_Node;
 
 import Arslan.CtCILibrary.BTreePrinter;
 
+import java.util.Random;
+
 public class Solution_TreeNode {
 
     public int data, size;
@@ -18,13 +20,13 @@ public class Solution_TreeNode {
             System.out.println("Already present");
         } else if (data == Integer.MIN_VALUE) {
             data = i;
-            size=1;
+
         } else if (i > data) {
             if (this.right == null) {
                 Solution_TreeNode r = new Solution_TreeNode();
                 r.insertInOrder(i);
                 this.right = r;
-                size++;
+                //size++;
             } else {
                 this.right.insertInOrder(i);
             }
@@ -33,13 +35,13 @@ public class Solution_TreeNode {
                 Solution_TreeNode l = new Solution_TreeNode();
                 l.insertInOrder(i);
                 this.left = l;
-                size++;
+                //size++;
             } else {
                 this.left.insertInOrder(i);
             }
         }
 
-
+    size++; //Also adds when System.out.println("Already present") ;(
     }
 
     public Solution_TreeNode find(int i) {
@@ -66,9 +68,18 @@ public class Solution_TreeNode {
 
     }
 
-    public void getRandomNode(int i) {
+    public Solution_TreeNode getRandomNode() {
+        Random random = new Random();
+        int leftSize = this.left == null ? 0 : this.left.size;
+        int index = random.nextInt(size); //size not included but zero included
 
-
+        if (index < leftSize) {
+            return this.left.getRandomNode();
+        } else if (index == leftSize) {
+            return this;
+        } else {
+            return right.getRandomNode();
+        }
     }
 
     public void printtraverse(){

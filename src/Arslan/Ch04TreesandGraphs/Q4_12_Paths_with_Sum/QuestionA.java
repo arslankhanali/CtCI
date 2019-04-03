@@ -64,6 +64,8 @@ public class QuestionA {
 		root.right.left = new TreeNode(0);
 		root.right.left.right = new TreeNode(0);
 		root.right.right = new TreeNode(0);
+		int pathsFromRoot = countPathsWithSumFromNode(root, 0, 0);
+        System.out.println(pathsFromRoot);
 		System.out.println(countPathsWithSum(root, 0));
 		System.out.println(countPathsWithSum(root, 4));
 	}

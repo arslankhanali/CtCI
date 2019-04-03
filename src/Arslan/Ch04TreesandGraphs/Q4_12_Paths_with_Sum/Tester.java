@@ -14,7 +14,7 @@ public class Tester {
 			TreeNode root = AssortedMethods.randomBST(size, min, max);
 		
 			for (int targetSum = Math.min(-1, min * size - 10); targetSum <= Math.max(100, max * size + 10); targetSum++) {
-				int answerA = QuestionA.countPathsWithSum(root, targetSum);
+				int answerA = Solution_B.countPathsWithSum(root, targetSum);
 				int answerB = QuestionB.countPathsWithSum(root, targetSum);
 				if (answerA > 0 || answerB > 0) {
 					System.out.println(targetSum + ": " + answerA + ", " + answerB + " | " + (answerA == answerB));
