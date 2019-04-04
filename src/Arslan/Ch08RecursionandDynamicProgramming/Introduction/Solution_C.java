@@ -1,0 +1,75 @@
+package Arslan.Ch08RecursionandDynamicProgramming.Introduction;
+
+public class Solution_C {
+    public static int fibonacci(int n) {
+        if(n==0)return 0;
+        if(n==1)return 1;
+
+        int[] memo= new int[n+1];
+        memo[0]=0;
+        memo[1]=1;
+
+
+        for (int i = 2; i <= n; i++) {
+            memo[i]=memo[i-1]+memo[i-2];
+
+        }
+
+        return memo[n];
+
+    }
+
+    public static int factorial(int n){
+        if(n==0)return 0;
+        if(n==1)return 1;
+
+        int[] memo=new int[n+1];
+        //memo[0]=1;
+        memo[0]=1;
+
+
+        for (int i = 1; i <= n; i++) {
+            memo[i]=memo[i-1]*i;
+        }
+
+        return memo[n];
+    }
+
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        int max = 10; // Make this as big as you want! (Though you'll exceed the bounds of a long around 46)
+        int trials = 1; // Run code multiple times to compute average time.
+        double[] times = new double[max]; // Store times
+
+        for (int j = 0; j < trials; j++) { // Run this 10 times to compute
+            for (int i = 0; i < max; i++) {
+                long start = System.currentTimeMillis();
+                //System.out.println(fibonacci(i));
+                System.out.println(factorial(i));
+                long end = System.currentTimeMillis();
+                long time = end - start;
+                times[i] += time;
+            }
+        }
+
+        for (int j = 0; j < max; j++) {
+            //System.out.println(j + ": " + times[j] / trials + "ms");
+        }
+    }
+
+//            n	n!
+//            0	1
+//            1	1
+//            2	2
+//            3	6
+//            4	24
+//            5	120
+//            6	720
+//            7	5040
+//            8	40320
+//            9	362880
+//            10	3628800
+
+}

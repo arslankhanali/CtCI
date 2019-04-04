@@ -1,0 +1,39 @@
+package Arslan.Ch08RecursionandDynamicProgramming.Introduction;
+
+public class Solution_A {
+
+    public static int fibonacci(int i) {
+        if(i==0)return 1;
+        if(i==1)return 1;
+
+
+        return fibonacci(i-1)+fibonacci(i-2);
+
+    }
+
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        int max = 10; // WARNING: If you make this above 40ish, your computer may serious slow down.
+        int trials = 1; // Run code multiple times to compute average time.
+        double[] times = new double[max]; // Store times
+
+
+        for (int j = 0; j < trials; j++) { // Run this 10 times to compute
+            for (int i = 0; i < max; i++) {
+                long start = System.currentTimeMillis();
+                System.out.println(fibonacci(i));
+                long end = System.currentTimeMillis();
+                long time = end - start;
+                times[i] += time;
+            }
+        }
+
+        for (int j = 0; j < max; j++) {
+            System.out.println(j + ": " + times[j] / trials + "ms");
+        }
+
+        System.out.println(fibonacci(5));
+    }
+}

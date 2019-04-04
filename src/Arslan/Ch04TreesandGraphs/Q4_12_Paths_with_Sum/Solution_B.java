@@ -2,42 +2,44 @@ package Arslan.Ch04TreesandGraphs.Q4_12_Paths_with_Sum;
 
 import Java.CtCILibrary.TreeNode;
 
+import java.util.HashMap;
+
 public class Solution_B {
 
     public static int countPathsWithSum(TreeNode root, int targetSum) {
-
-        if (root == null) return 0;
-
-        int pathsFromRoot = countPathsWithSumFromNode(root, targetSum, 0);
-
-        int l = countPathsWithSum(root.left, targetSum);
-        int r = countPathsWithSum(root.right, targetSum);
-
-        return pathsFromRoot + l + r;
+        return countPathsWithSum(root, targetSum, 0, new HashMap<Integer, Integer>());
     }
 
-    public static int countPathsWithSumFromNode(TreeNode node, int targetSum, int currentSum) {
-        if (node == null) {
-            return 0;
+    public static int countPathsWithSum(TreeNode node, int targetSum, int runningSum, HashMap<Integer, Integer> pathCount) {
+        if (node == null) return 0; // Base case
+        runningSum += node.data;
+
+        int sum = runningSum - targetSum;
+        int totalPaths = pathCount.getOrDefault(sum, 0);
+
+        if (runningSum == targetSum) {
+            totalPaths++;
         }
-        currentSum = currentSum + node.data;
-        int count = 0;
 
-        if (currentSum == targetSum) {
-            count++;
-        }
+        incrementHashTable(pathCount, runningSum, 1);
 
-        int l = countPathsWithSumFromNode(node.left, targetSum, currentSum);
-        int r = countPathsWithSumFromNode(node.right, targetSum, currentSum);
+        totalPaths += countPathsWithSum(node.left, targetSum, runningSum, pathCount);
+        totalPaths += countPathsWithSum(node.right, targetSum, runningSum, pathCount);
 
-
-
-        return count + l + r;
-
-
+        incrementHashTable(pathCount, runningSum, -1); // Remove runningSum
+        return totalPaths;
     }
 
-    public static void main(String[] args) {
+    public static void incrementHashTable(HashMap<Integer, Integer> hashTable, int key, int delta) {
+        int newCount = hashTable.getOrDefault(key, 0) + delta;
+        if (newCount == 0) { // Remove when zero to reduce space usage
+            hashTable.remove(key);
+        } else {
+            hashTable.put(key, newCount);
+        }
+    }
+
+    public static void main(String [] args) {
 		/*
 		TreeNode root = new TreeNode(5);
 		root.left = new TreeNode(3);
@@ -46,7 +48,9 @@ public class Solution_B {
 		root.left.right = new TreeNode(8);
 		root.right.left = new TreeNode(2);
 		root.right.right = new TreeNode(6);
-		System.out.println(countPathsWithSum(root, 0));*/
+		root.right.left.left = new TreeNode(0);
+		System.out.println(countPathsWithSum(root, 0));
+		*/
 
 		/*TreeNode root = new TreeNode(-7);
 		root.left = new TreeNode(-7);
@@ -59,7 +63,7 @@ public class Solution_B {
 		root.right.right.left.left = new TreeNode(-3);
 		root.right.right.left.left.right = new TreeNode(2);
 		root.right.right.left.left.right.left = new TreeNode(1);
-		System.out.println(countPathsWithSum(root, -14));*/
+		System.out.println(countPathsWithSum(root, 0));*/
 
         TreeNode root = new TreeNode(0);
         root.left = new TreeNode(0);
@@ -67,8 +71,6 @@ public class Solution_B {
         root.right.left = new TreeNode(0);
         root.right.left.right = new TreeNode(0);
         root.right.right = new TreeNode(0);
-        int pathsFromRoot = countPathsWithSumFromNode(root, 0, 0);
-        System.out.println(pathsFromRoot);
         System.out.println(countPathsWithSum(root, 0));
         System.out.println(countPathsWithSum(root, 4));
     }
