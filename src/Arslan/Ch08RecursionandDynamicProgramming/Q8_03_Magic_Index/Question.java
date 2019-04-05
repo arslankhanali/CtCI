@@ -46,7 +46,7 @@ public class Question {
 		}
 		return array;
 	}
-	
+
 	public static void main(String[] args) {
 		for (int i = 0; i < 1000; i++) {
 			int size = AssortedMethods.randomIntInRange(5, 20);

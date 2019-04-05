@@ -8,6 +8,7 @@ public class QuestionB {
 		ArrayList<Integer> subset = new ArrayList<Integer>(); 
 		int index = 0;
 		for (int k = x; k > 0; k >>= 1) {
+			System.out.print(k);
 			if ((k & 1) == 1) {
 				subset.add(set.get(index));
 			}
@@ -15,11 +16,22 @@ public class QuestionB {
 		}
 		return subset;
 	}
-	
+	//1 2 1 3 1 4 21 5 21 6 31 7 31
+
+	/*
+	1
+	10
+	11
+	100
+	101
+	110
+	*/
 	public static ArrayList<ArrayList<Integer>> getSubsets(ArrayList<Integer> set) {
 		ArrayList<ArrayList<Integer>> allsubsets = new ArrayList<ArrayList<Integer>>();
-		int max = 1 << set.size(); /* Compute 2^n */ 
+		int max = 1 << set.size(); /* Compute 2^n */
+
 		for (int k = 0; k < max; k++) {
+
 			ArrayList<Integer> subset = convertIntToSet(k, set);
 			allsubsets.add(subset);
 		}
