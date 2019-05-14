@@ -1,0 +1,16 @@
+Run Agile_Solution.java file to start the program.
+Each new robot will be an instance of Robot class in Robot.java.
+
+SAMPLE I/O for the system is (hit enter after each line):
+
+5 5
+1 2 N
+LMLMLMLMM
+3 3 E
+MMRMMRMRRM
+1 3 N
+5 1 E
+
+
+Note: Agile_Solution has some commented lines. These lines were added to make a more user friendly and intuitive system.
+However these lines have been commented out to get I/O similar to question's demand.

@@ -44,7 +44,7 @@ public class QuestionA {
 		}
 	}
 	public static void main(String[] args) {
-		Set<String> list = generateParens(4);
+		Set<String> list = generateParens(5);
 		for (String s : list) {
 			System.out.println(s);
 		}

@@ -1,15 +1,25 @@
 package Arslan.Ch08RecursionandDynamicProgramming.Q8_11_Coins;
 
-public class Question {
-    public static int makeChange(int amount, int[] denoms, int index) {
-        if (index >= denoms.length - 1) return 1; // one denom remaining -> one way to do it
-        int denomAmount = denoms[index];
-        int ways = 0;
-        for (int i = 0; i * denomAmount <= amount; i++) {
-            int amountRemaining = amount - i * denomAmount;
+public class Solution {
 
-            ways += makeChange(amountRemaining, denoms, index + 1); // go to next denom
-        }
+    public static int makeChange(int amount, int[] denoms, int index) {
+
+        if(index>=denoms.length-1){
+
+            return 1;}
+
+        int ways=0;
+
+        int denom=denoms[index];
+
+            for (int i = 0; i*denom <= amount; i++) {
+
+                int remain=amount-i*denom;
+
+                ways+=makeChange(remain,denoms,index+1);
+
+
+            }
         return ways;
     }
 
@@ -22,5 +32,4 @@ public class Question {
         int ways = makeChange(30, denoms);
         System.out.println(ways);
     }
-
 }

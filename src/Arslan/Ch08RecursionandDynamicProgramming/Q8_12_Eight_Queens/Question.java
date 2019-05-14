@@ -88,6 +88,7 @@ public class Question {
 		Integer[] columns = new Integer[GRID_SIZE];
 		clear(columns);
 		placeQueens(0, columns, results);
+
 		printBoards(results);
 		System.out.println(results.size());
 	}

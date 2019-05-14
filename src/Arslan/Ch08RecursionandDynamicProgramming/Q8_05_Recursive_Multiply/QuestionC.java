@@ -5,6 +5,8 @@ public class QuestionC {
 	public static int counter = 0;
 	
 	public static int minProductHelper(int smaller, int bigger) {
+		System.out.println("smaller "+ smaller+ " bigger "+bigger);
+
 		if (smaller == 0) {
 			return 0;
 		} else if (smaller == 1) {
@@ -13,11 +15,15 @@ public class QuestionC {
 		
 		int s = smaller >> 1;
 		int halfProd = minProductHelper(s, bigger);
-		
+
+		System.out.println("halfProd "+ halfProd+ " smaller "+smaller+" bigger "+ bigger);
+
 		if (smaller % 2 == 0) {
+			System.out.println("HIT 1");
 			counter++;
 			return halfProd + halfProd;
 		} else {
+			System.out.println("HIT 2");
 			counter+=2;
 			return halfProd + halfProd + bigger;
 		}
@@ -32,8 +38,8 @@ public class QuestionC {
 	}
 	
 	public static void main(String[] args) {
-		int a = 13494;
-		int b = 22323;
+		int a = 34213;
+		int b = 3249;
 		int product = a * b;
 		int minProduct = minProduct(a, b);
 		if (product == minProduct) {

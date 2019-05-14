@@ -34,13 +34,14 @@ public class Question {
 	public static ArrayList<String> printPerms(String s) {
 		ArrayList<String> result = new ArrayList<String>();
 		HashMap<Character, Integer> map = buildFreqTable(s);
+
 		printPerms(map, "", s.length(), result);
 		return result;
 	}
-	
+
 	public static void main(String[] args) {
 		long startTime= System.currentTimeMillis();
-		String s = "abababaaa";
+		String s = "ababa";
 		ArrayList<String> result = printPerms(s);
 		System.out.println("Count: " + result.size());
 		for (String r : result) {

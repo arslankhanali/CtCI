@@ -17,6 +17,7 @@ public class QuestionA {
 		char first = str.charAt(0); // get the first character
 		String remainder = str.substring(1); // remove the first character
 		ArrayList<String> words = getPerms(remainder);
+
 		for (String word : words) {
 			for (int j = 0; j <= word.length(); j++) {
 				String s = insertCharAt(word, first, j);
